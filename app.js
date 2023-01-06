@@ -67,7 +67,8 @@ if(!document.querySelector('.todo table')){
 const table = document.querySelector('.todo table');
 const tableBody = document.querySelector('table tbody');
 
-table.style.visibility = "visible";
+table.style.display = "inline-table";
+table.style.opacity = 1;
 
 const tr = document.createElement('tr') ;
 
@@ -103,7 +104,7 @@ tableBody.insertAdjacentElement('beforeend' , tr)
 
 
 
-// remove table row 
+// remove table row
 
 function removeEle(ele){
   ele.remove();
@@ -112,9 +113,12 @@ const table = document.querySelector('.todo table');
 
 
 if(table.querySelector('tbody').children.length == 0){
-  table.style.visibility = "hidden";
+  table.style.display = "none";
+  table.style.opacity = 0;
+
 }else {
-  table.style.visibility = "visible";
+  table.style.display = "inline-table";
+  table.style.opacity = 1;
 }
 
 
