@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo Application</title>
+  </head>
+  <body>
+
+
+<div class="add-data">
+  <form onsubmit="submitHandler(event)" id = "todo-form">
+<div class="todo-name">
+  <label for="name">Todo Name: </label>
+  <input type="text" id= "name" name="name" required placeholder="Todo Name" value=""/>
+</div>
+
+<div class="todo-description">
+  <label for="description">Todo Description: </label>
+  <input type="text" id= "description" required placeholder="Todo description" name="description" value=""/>
+</div>
+
+<div class="">
+  <button type="submit" name="button" class="todo-btn" >Add </button>
+</div>
+  </form>
+</div>
+
+
+<div class="todo">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+
+<tbody>
+
+</tbody>
+
+  </table>
+</div>
+
+<script type="text/javascript" src = "app.js" ></script>
+  </body>
+</html>
